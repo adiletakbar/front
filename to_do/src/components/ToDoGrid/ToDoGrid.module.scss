@@ -1,0 +1,41 @@
+@use '../../styles/global.scss' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* расстояние между карточками */
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Форма добавления задачи */
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: azure;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form button:hover {
+  background-color: #d0e7ff;
+}
+
